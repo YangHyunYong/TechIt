@@ -1,0 +1,51 @@
+h1{
+    background-color: yellowgreen;
+    color:brown;
+}
+
+h5{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: -40px;
+}
+
+li{
+    text-decoration: underline;
+}
+
+.back{
+    font-size: 28px;
+    text-align: center;
+}
+
+#three {
+    background-color: chartreuse;
+    text-align: center;
+    margin: 12px;
+    padding: 12px;
+}
+
+#four {
+    background-color: goldenrod;
+    text-align:center;
+    margin:12px;
+    padding:12px;
+}
+
+#five {
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 12px;
+    padding: 12px;
+}
+
+.list {
+    color:chocolate;
+    background-color: aqua;
+    text-align: center;
+    margin: 12px;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+

@@ -1,0 +1,23 @@
+{
+    "name": "초록색 슬라임",
+  "description": "초록색 슬라임 입니다~", 
+  "image": "https://salmon-solid-tern-442.mypinata.cloud/ipfs/QmX3XTcPUU2Q7p2yHjSj4QwBmYCqVa8Sda8zGxzKAvCHgD", 
+  "external_url": "https://openseacreatures.io/3", 
+  "attributes": [{
+    "trait_type":"Background",
+    "value": "White"
+  },
+  {
+    "trait_type":"Body",
+    "value": "Green"
+  },
+  {
+    "trait_type":"Eyes",
+    "value": "Black"
+  },
+  {
+    "trait_type":"Level",
+    "value": 1
+  }
+]
+}
