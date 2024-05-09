@@ -1,6 +1,6 @@
-const Card = () => {
+const Card = ({children}) => {
     return (
-        <li className="bg-blue-100 w-44 h-60">card</li>
+        <li className="bg-blue-100 w-44 h-60">{children}</li>
     );
 }
 

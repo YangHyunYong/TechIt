@@ -1,4 +1,4 @@
-import ButtonOther from "./ButtonOther";
+import Button from "./Button";
 import Logo from "./Logo";
 import NavBar from "./Navbar";
 
@@ -10,7 +10,7 @@ const Header = () => {
             {/* NavBar */}
             <NavBar></NavBar>
             {/* ButtonMore */}
-            <ButtonOther></ButtonOther>
+            <Button name="..." isMoreButton={true}></Button>
         </header>
     )
 };
