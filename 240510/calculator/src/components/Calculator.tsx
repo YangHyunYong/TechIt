@@ -12,7 +12,11 @@ const Calculator: FC = () => {
 
   return (
     <div className="flex flex-col">
-      <div className="bg-gray-950 h-[45px] rounded-md"></div>
+      <div className="bg-gray-950 h-[45px] rounded-md">
+        <div className="bg-gray-100 w-24 float-end rounded-sm m-2 p-1 font-bold text-xs text-right">
+          made by yang
+        </div>
+      </div>
       <div className="bg-gray-300 p-4 shadow-md">
         <Result result={result}></Result>
         <div className=" grid grid-cols-4 gap-2">
