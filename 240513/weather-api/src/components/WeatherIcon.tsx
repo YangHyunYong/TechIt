@@ -1,5 +1,15 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import {
+  WiCloud,
+  WiDaySunny,
+  WiDayCloudy,
+  WiCloudy,
+  WiRain,
+  WiLightning,
+  WiSnow,
+  WiFog,
+} from "react-icons/wi";
 
 interface WeatherData {
   coord: {
@@ -43,6 +53,18 @@ interface WeatherData {
   cod: number;
 }
 
+const wetherIcons: { [key: string]: JSX.Element } = {
+  "01": <WiDaySunny size={32} />,
+  "02": <WiDayCloudy size={32} />,
+  "03": <WiCloud size={32} />,
+  "04": <WiCloudy size={32} />,
+  "09": <WiRain size={32} />,
+  "10": <WiRain size={32} />,
+  "11": <WiLightning size={32} />,
+  "13": <WiSnow size={32} />,
+  "50": <WiFog size={32} />,
+};
+
 const WeatherIcon = () => {
   const [latitude, setLatitude] = useState<number>();
   const [longitude, setLongitude] = useState<number>();
@@ -81,13 +103,9 @@ const WeatherIcon = () => {
 
   return (
     <div className="text-xs flex items-center">
-      <img
-        className="w-12 h-12"
-        alt="weather"
-        src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}@2x.png`}
-      />
+      {wetherIcons[weatherData.weather[0].icon.substring(0, 2)]}
       <div className="w-16">
-        <div className="font-semibold">{weatherData?.name}</div>{" "}
+        <div className="font-semibold">{weatherData.name}</div>
         <div>{weatherData.main.temp.toFixed(1)}℃</div>
       </div>
     </div>
